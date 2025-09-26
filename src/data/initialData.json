@@ -1,0 +1,39 @@
+{
+    "allWidgets": {
+      "cspm": [
+        { "id": "cspm-1", "title": "Cloud Accounts", "content": "Component for displaying cloud account connection status." },
+        { "id": "cspm-2", "title": "Cloud Account Risk Assessment", "content": "Component for showing risk assessment data." },
+        { "id": "cspm-3", "title": "Security Posture", "content": "Displays overall security posture score." }
+      ],
+      "cwpp": [
+        { "id": "cwpp-1", "title": "Top 5 Namespace Specific Alerts", "content": "Data for top 5 namespace alerts." },
+        { "id": "cwpp-2", "title": "Workload Alerts", "content": "Graph of workload alerts over time." }
+      ],
+      "registry": [
+        { "id": "registry-1", "title": "Image Risk Assessment", "content": "Vulnerability data for container images." },
+        { "id": "registry-2", "title": "Image Security Issues", "content": "Breakdown of security issues by severity." }
+      ]
+    },
+    "initialLayout": [
+      {
+        "id": "cspm",
+        "title": "CSPM Executive Dashboard",
+        "widgets": [
+          { "id": "cspm-1", "title": "Cloud Accounts", "content": "2 Connected, 2 Not Connected." },
+          { "id": "cspm-2", "title": "Cloud Account Risk Assessment", "content": "9659 Total: 1089 Failed, 7253 Passed." }
+        ]
+      },
+      {
+        "id": "cwpp",
+        "title": "CWPP Dashboard",
+        "widgets": []
+      },
+      {
+        "id": "registry",
+        "title": "Registry Scan",
+        "widgets": [
+          { "id": "registry-1", "title": "Image Risk Assessment", "content": "1470 Total Vulnerabilities." }
+        ]
+      }
+    ]
+  }
